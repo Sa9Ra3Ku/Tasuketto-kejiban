@@ -128,3 +128,22 @@
     @apply font-sans;
   }
 }
+
+.deepdive-anchor {
+  scroll-margin-top: 5.5rem;
+}
+
+.deepdive-anchor:target > div {
+  animation: deepdive-target-glow 2.4s ease-out;
+}
+
+@keyframes deepdive-target-glow {
+  0% {
+    box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.35);
+    background-color: rgba(236, 253, 245, 0.95);
+  }
+  100% {
+    box-shadow: none;
+    background-color: transparent;
+  }
+}
